@@ -1054,16 +1054,21 @@ button:focus {
 }
 /* --------- PROFILE PHOTO --------- */
 .myAvtar img {
-  width: 300px !important;
-  height: 300px !important;
+  width: 280px !important;
+  height: 340px !important;
   object-fit: cover !important;
-  object-position: top !important;
-  border-radius: 50% !important;
+  object-position: center top !important;
+  border-radius: 20px !important;
   border: 3px solid rgba(205, 95, 248, 0.6) !important;
   box-shadow: 0 0 20px rgba(205, 95, 248, 0.5),
               0 0 40px rgba(123, 47, 255, 0.3),
               0 0 80px rgba(205, 95, 248, 0.15) !important;
   animation: profileGlow 3s ease-in-out infinite !important;
+  transition: transform 0.4s ease !important;
+}
+
+.myAvtar img:hover {
+  transform: scale(1.03) !important;
 }
 
 @keyframes profileGlow {
@@ -1078,6 +1083,36 @@ button:focus {
                 0 0 100px rgba(205, 95, 248, 0.2);
     border-color: rgba(205, 95, 248, 1);
   }
+}
+
+/* corner accent frame */
+.myAvtar {
+  position: relative !important;
+}
+
+.myAvtar::before,
+.myAvtar::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-color: #00e0ff;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.myAvtar::before {
+  top: 8%;
+  left: 8%;
+  border-top: 3px solid #00e0ff;
+  border-left: 3px solid #00e0ff;
+}
+
+.myAvtar::after {
+  bottom: 8%;
+  right: 8%;
+  border-bottom: 3px solid #00e0ff;
+  border-right: 3px solid #00e0ff;
 }
 /* --------- SKILL BADGES --------- */
 .tech-icons {
