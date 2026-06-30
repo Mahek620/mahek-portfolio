@@ -70,7 +70,7 @@ function Home2() {
                   <a href="https://linkedin.com/in/mahek-raj" target="_blank" rel="noreferrer" className="icon-colour home-social-icons"><FaLinkedinIn /></a>
                 </li>
                 <li className="social-icons">
-                  <a href="mailto:mahekraj620@gmail.com" target="_blank" rel="noreferrer" className="icon-colour home-social-icons"><AiOutlineMail /></a>
+                  <a href="mailto:mahekrj2@gmail.com" target="_blank" rel="noreferrer" className="icon-colour home-social-icons"><AiOutlineMail /></a>
                 </li>
               </ul>
             </div>
