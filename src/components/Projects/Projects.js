@@ -6,7 +6,6 @@ import chatbot from "../../Assets/Projects/chatbot.png";
 import facemask from "../../Assets/Projects/facemask.png";
 import hostel from "../../Assets/Projects/hostel.png";
 import useScrollAnimation from "../../useScrollAnimation";
-import stock from "../../Assets/Projects/stock.png";
 import researchAgent from "../../Assets/Projects/research-agent.png";
 
 function Projects() {
@@ -26,6 +25,12 @@ function Projects() {
           <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
             {[
               {
+                img: researchAgent,
+                title: "Research Agent (FastAPI + FastMCP + LLM)",
+                desc: "LLM agent that answers research questions through a multi-step tool-calling loop. A FastMCP server exposes web_search and fetch_page tools, served through async FastAPI endpoints with cited answers and a tool-call trace.",
+                link: "https://github.com/Mahek620/research-agent",
+              },
+              {
                 img: chatbot,
                 title: "AI E-Commerce Chatbot",
                 desc: "NLP-powered chatbot built with Python, Flask, and Django for Swatrix Innovations. Integrated with APIs for smooth deployment, optimized SQL queries and response handling, reducing customer response time by 60%.",
@@ -43,19 +48,6 @@ function Projects() {
                 desc: "Full-stack student management portal built with Django, SQLite, and Bootstrap following complete SDLC. Managed 100+ records with automated room allocation, reducing manual effort by 50% with responsive cross-browser design.",
                 link: "https://github.com/mahek620",
               },
-              {
-  img: stock,
-  title: "Real-Time Stock Monitor",
-  desc: "Application that tracks live stock prices and displays real-time updates. Built with [your tech stack, e.g. Python, Flask, JavaScript]. Add a key feature or result here, such as alerts, charts, or the number of stocks tracked.",
-  link: "https://github.com/Mahek620/real-time-stock-monitor",
-},
-<ProjectCard
-  imgPath={researchAgent}
-  isBlog={false}
-  title="Research Agent (FastAPI + FastMCP + LLM)"
-  description="LLM agent that answers research questions through a multi-step tool-calling loop. A FastMCP server exposes web_search and fetch_page tools, served through async FastAPI endpoints with cited answers and a tool-call trace."
-  ghLink="https://github.com/Mahek620/research-agent"
-/>
             ].map((project, index) => (
               <Col md={4} className="project-card animate-child" key={index}>
                 <ProjectCard
