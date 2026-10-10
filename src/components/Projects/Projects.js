@@ -5,6 +5,7 @@ import Particle from "../Particle";
 import chatbot from "../../Assets/Projects/chatbot.png";
 import facemask from "../../Assets/Projects/facemask.png";
 import hostel from "../../Assets/Projects/hostel.png";
+import stock from "../../Assets/Projects/stock.png";
 import useScrollAnimation from "../../useScrollAnimation";
 import researchAgent from "../../Assets/Projects/research-agent.png";
 
@@ -29,6 +30,12 @@ function Projects() {
                 title: "Research Agent (FastAPI + FastMCP + LLM)",
                 desc: "LLM agent that answers research questions through a multi-step tool-calling loop. A FastMCP server exposes web_search and fetch_page tools, served through async FastAPI endpoints with cited answers and a tool-call trace.",
                 link: "https://github.com/Mahek620/research-agent",
+              },
+              {
+                img: stock,
+                title: "Real-Time Stock Monitor",
+                desc: "Application that tracks live stock prices and displays real-time updates. Built with [YOUR TECH STACK]. [ONE REAL FEATURE, e.g. price alerts, live charts].",
+                link: "https://github.com/Mahek620/real-time-stock-monitor",
               },
               {
                 img: chatbot,
